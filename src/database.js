@@ -86,14 +86,14 @@ export default [
   },
   {
     Name: "Baxandall",
-    Type: "EQ",
+    Type: "Eq",
     Use: "Mixing",
     Description: "Baxandall is a killer general-purpose EQ",
     Comments: "",
   },
   {
     Name: "Biquad",
-    Type: "EQ",
+    Type: "Eq",
     Use: "Mixing",
     Description: "Biquad is the Airwindows implementation of a biquad filter",
     Comments: "",

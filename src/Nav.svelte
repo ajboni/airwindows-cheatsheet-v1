@@ -41,7 +41,7 @@
         <i class="fas fa-headphones" aria-hidden="true" />
       </span>
       <span class="separator" />
-      <span>AwCs</span>
+      <span>Home</span>
     </a>
 
     <a
@@ -68,7 +68,7 @@
         Suggest Update
       </a>
       <a
-        href="https://github.com/ajboni/airwindows-cheatsheet/readme"
+        href="https://github.com/ajboni/airwindows-cheatsheet#how-to-contribute"
         target="blank"
         class="navbar-item">
         <span class="icon is-size-5">
