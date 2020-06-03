@@ -17,7 +17,7 @@
       </h2>
       <p>
         This site is ment to be a quick reference for a constantly growing list
-        of the
+        of the awesome
         <a href="https://www.airwindows.com">AirWindows Plugins.</a>
         <br />
         Info originally collected by Tiki Horea with help of the
