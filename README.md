@@ -8,5 +8,5 @@ If you know your git, just do a PR. The database of plugins is stored at `databa
 Otherwise please [fill out an issue](https://github.com/ajboni/airwindows-cheatsheet/issues/new)
 
 # LICENSE
-Copyright © 2020 - [Alexis Boni](https://github.com/ajboni/) 
-Released under the [GNU General Public License v3.0](LICENSE.md)
+Copyright © 2020 - [Alexis Boni](https://github.com/ajboni/).  
+Released under the [GNU General Public License v3.0](LICENSE)
