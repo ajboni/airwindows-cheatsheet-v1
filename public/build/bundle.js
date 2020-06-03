@@ -3471,7 +3471,7 @@ var app = (function () {
     	let uniqueTypes = [...new Set(db.map(item => item.Type))].sort();
     	let searchString = "";
     	let searchDelayTimer;
-    	let searchDelayTime = 500;
+    	let searchDelayTime = 350;
     	let isLoadingSearchClass = "";
     	let searchField;
     	let sortBy = "Name";
