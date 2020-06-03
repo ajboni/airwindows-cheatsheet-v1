@@ -1,9 +1,8 @@
 <script>
   import config from "./config";
   export let plugin;
-  const { Name, Type, Use, Description, Comments } = plugin;
-  let airwindowsSiteLink = config.AIRWINDOWS_SITE + Name.toLowerCase();
-  let youtubeLink = config.AIRWINDOWS_YOUTUBE_QUERY + Name.toLowerCase();
+  let airwindowsSiteLink = config.AIRWINDOWS_SITE + plugin.Name.toLowerCase();
+  let youtubeLink = config.AIRWINDOWS_YOUTUBE_QUERY + plugin.Name.toLowerCase();
 </script>
 
 <style>
@@ -32,24 +31,25 @@
 <div class="card">
   <a href={airwindowsSiteLink} target="blank">
     <header class="card-header has-background-white-bis">
-      <p class="card-header-title">{Name}</p>
+      <p class="card-header-title">{plugin.Name}</p>
 
       <div class="card-header-icon">
         <div class="tags has-addons">
-          <span class="tag is-primary">{Type}</span>
-          <span class="tag ">{Use}</span>
+          <span class="tag ">{plugin.Use}</span>
+          <span class="tag is-primary">{plugin.Type}</span>
+
         </div>
       </div>
     </header>
   </a>
   <div class="card-content">
-    <div class="content">{Description}</div>
-    {#if Comments}
+    <div class="content">{plugin.Description}</div>
+    {#if plugin.Comments}
       <div class="comments">
         <span class="icon has-text-primary is-size-6 ">
           <i class="fas fa-comments" aria-hidden="true" />
         </span>
-        {Comments}
+        {plugin.Comments}
       </div>
     {/if}
   </div>

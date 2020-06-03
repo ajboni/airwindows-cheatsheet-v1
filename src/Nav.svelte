@@ -25,15 +25,23 @@
 </script>
 
 <style>
-  .navbar-item img {
-    color: white;
+  .separator {
+    margin-right: 1rem;
+  }
+
+  .separator-small {
+    margin-right: 0.3rem;
   }
 </style>
 
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">
-      <img src="./abstract.svg" width="112" height="28" />
+    <a class="navbar-item has-text-primary" href="/">
+      <span class="icon has-text-primary is-size-3 ">
+        <i class="fas fa-headphones" aria-hidden="true" />
+      </span>
+      <span class="separator" />
+      <span>AwCs</span>
     </a>
 
     <a
@@ -50,7 +58,6 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="/" class="navbar-item">Home</a>
       <a href="https://airwindows.com" target="blanl" class="navbar-item">
         Airwindows
       </a>
@@ -64,7 +71,12 @@
         href="https://github.com/ajboni/airwindows-cheatsheet/readme"
         target="blank"
         class="navbar-item">
-        Contribute!
+        <span class="icon is-size-5">
+          <i class="fab fa-github" aria-hidden="true" />
+        </span>
+        <span class="separator-small" />
+        <span>Contribute!</span>
+
       </a>
     </div>
 
