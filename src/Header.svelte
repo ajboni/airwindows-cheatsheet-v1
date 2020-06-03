@@ -12,7 +12,9 @@
   <div class="hero-body has-text-centered">
     <div class="container">
       <h1 class="title">Airwindows Cheatsheet</h1>
-      <!-- <h2 class="subtitle">In a mix, no one can hear your screen.</h2> -->
+      <h2 class="subtitle">
+        <cite>"In a mix, no-one can hear your screen."</cite>
+      </h2>
       <p>
         This site is ment to be a quick reference for a constantly growing list
         of the
