@@ -2380,11 +2380,11 @@ var app = (function () {
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-comments");
     			attr_dev(i, "aria-hidden", "true");
-    			add_location(i, file$2, 49, 10, 1130);
-    			attr_dev(span, "class", "icon has-text-primary is-size-6  svelte-k4ji9j");
-    			add_location(span, file$2, 48, 8, 1072);
-    			attr_dev(div, "class", "comments svelte-k4ji9j");
-    			add_location(div, file$2, 47, 6, 1041);
+    			add_location(i, file$2, 49, 10, 1144);
+    			attr_dev(span, "class", "icon has-text-primary is-size-6  svelte-1x7ydk1");
+    			add_location(span, file$2, 48, 8, 1086);
+    			attr_dev(div, "class", "comments svelte-1x7ydk1");
+    			add_location(div, file$2, 47, 6, 1055);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2459,26 +2459,26 @@ var app = (function () {
     			t7 = space();
     			if (if_block) if_block.c();
     			attr_dev(p, "class", "card-header-title");
-    			add_location(p, file$2, 33, 6, 646);
+    			add_location(p, file$2, 33, 6, 660);
     			attr_dev(span0, "class", "tag ");
-    			add_location(span0, file$2, 37, 10, 779);
+    			add_location(span0, file$2, 37, 10, 793);
     			attr_dev(span1, "class", "tag is-primary");
-    			add_location(span1, file$2, 38, 10, 828);
+    			add_location(span1, file$2, 38, 10, 842);
     			attr_dev(div0, "class", "tags has-addons");
-    			add_location(div0, file$2, 36, 8, 739);
+    			add_location(div0, file$2, 36, 8, 753);
     			attr_dev(div1, "class", "card-header-icon");
-    			add_location(div1, file$2, 35, 6, 700);
-    			attr_dev(header, "class", "card-header has-background-white-bis svelte-k4ji9j");
-    			add_location(header, file$2, 32, 4, 586);
+    			add_location(div1, file$2, 35, 6, 714);
+    			attr_dev(header, "class", "card-header has-background-white-bis svelte-1x7ydk1");
+    			add_location(header, file$2, 32, 4, 600);
     			attr_dev(a, "href", /*airwindowsSiteLink*/ ctx[1]);
     			attr_dev(a, "target", "blank");
-    			add_location(a, file$2, 31, 2, 537);
+    			add_location(a, file$2, 31, 2, 551);
     			attr_dev(div2, "class", "content");
-    			add_location(div2, file$2, 45, 4, 961);
+    			add_location(div2, file$2, 45, 4, 975);
     			attr_dev(div3, "class", "card-content");
-    			add_location(div3, file$2, 44, 2, 930);
+    			add_location(div3, file$2, 44, 2, 944);
     			attr_dev(div4, "class", "card");
-    			add_location(div4, file$2, 30, 0, 516);
+    			add_location(div4, file$2, 30, 0, 530);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

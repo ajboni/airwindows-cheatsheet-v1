@@ -6,10 +6,10 @@
 </script>
 
 <style>
-  .separator {
+  /* .separator {
     margin: 0 6px;
     width: 1px;
-  }
+  } */
 
   .card-header {
     box-shadow: 0 0 0.25em rgba(10, 10, 10, 0.1);
@@ -18,10 +18,10 @@
   .comments {
     font-size: 0.85rem;
   }
-
+  /* 
   .card-footer-item {
     padding: 0.35rem;
-  }
+  } */
 
   span.icon {
     margin-right: 0.25rem;
