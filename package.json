@@ -1,6 +1,14 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
+  "description": "Cheatsheet for airwindows plugins. https://airwindowscheatsheet.aboni.dev",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajboni/airwindows-cheatsheet.git",
+    "repo_url": "https://github.com/ajboni/airwindows-cheatsheet"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "ajboni <mail@aboni.dev>",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
