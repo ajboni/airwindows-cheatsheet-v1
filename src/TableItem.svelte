@@ -29,7 +29,7 @@
 </style>
 
 <div class="card">
-  <a href={'"' + airwindowsSiteLink + '"'} target="_blank">
+  <a href={airwindowsSiteLink} target="_blank">
     <header class="card-header has-background-white-bis">
       <p class="card-header-title">{plugin.Name}</p>
 
