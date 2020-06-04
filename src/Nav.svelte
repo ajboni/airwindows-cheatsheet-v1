@@ -63,13 +63,13 @@
       </a>
       <a
         href="https://github.com/ajboni/airwindows-cheatsheet/issues"
-        target="blank"
+        target="_blank"
         class="navbar-item">
         Suggest Update
       </a>
       <a
         href="https://github.com/ajboni/airwindows-cheatsheet#how-to-contribute"
-        target="blank"
+        target="_blank"
         class="navbar-item">
         <span class="icon is-size-5">
           <i class="fab fa-github" aria-hidden="true" />
