@@ -20,7 +20,8 @@
         of the awesome
         <a href="https://www.airwindows.com">AirWindows Plugins.</a>
         <br />
-        Info originally collected by Tiki Horea with help of the
+        Info originally collected by [Tiki Horea](https://tikihorea.com) with
+        help of the
         <a href="https://www.facebook.com/groups/111040482827627/">
           Airwindows Audiophiles Facebook Group.
         </a>
