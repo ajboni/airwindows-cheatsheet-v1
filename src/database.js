@@ -1,16 +1,16 @@
 export default [
   {
     Name: "Acceleration",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
-    Description: "Acceleration limiter tames edge, leaves brightness",
+    Description: "Acceleration limiter tames edge, leaves brightness.",
     Comments: "",
   },
   {
     Name: "ADClip7",
     Type: "Limiter",
     Use: "Mastering",
-    Description: "The ultimate Airwindows loudness maximizer",
+    Description: "The ultimate Airwindows loudness maximizer.",
     Comments: "",
   },
   {
@@ -22,9 +22,9 @@ export default [
   },
   {
     Name: "Air",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
-    Description: "A different bright EQ from any other",
+    Description: "A bright EQ that's different from any other.",
     Comments: "",
   },
   {
@@ -54,7 +54,7 @@ export default [
   },
   {
     Name: "Aura",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "New kind of resonant lowpass EQ",
     Comments:
@@ -62,7 +62,7 @@ export default [
   },
   {
     Name: "Average",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "A lowpass filter you probably don’t have in your DAW, with a distinctive tone",
@@ -78,7 +78,7 @@ export default [
   },
   {
     Name: "BassKit",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "Centered bass reinforcement with subs fill. Clean and controllable.",
@@ -86,21 +86,21 @@ export default [
   },
   {
     Name: "Baxandall",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Baxandall is a killer general-purpose EQ",
     Comments: "",
   },
   {
     Name: "Biquad",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Biquad is the Airwindows implementation of a biquad filter",
     Comments: "",
   },
   {
     Name: "Biquad2",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "Biquad2 is the Airwindows biquad filter that’s more sweepable and synthy.",
@@ -108,7 +108,7 @@ export default [
   },
   {
     Name: "Bite",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "An unusual edge-maker",
     Comments:
@@ -157,7 +157,7 @@ export default [
     Use: "Mixing",
     Description: "The Airwindows console emulations",
     Comments:
-      "Dark - MCI (unusual midrange articulation, solid sound when pushed)\nRock - SSL (tightens bass; more character added using the input trim)\nLush - Neve (more bass; pillowy and fat, with airy highs and large in scale)\nVibe - funky old console (could bring an old dub platter sound to a track)\nHolo - Focusrite (3D space; locations of sound sources take on a special holographic quality)\nPunch - API (loaded with punch and impact)\nSteel - special effects console (lacks bass, old reggae consoles, it could accentuate the personality of some electronic music; cleans up low mid mud)\nTube - Manley (luminous, airy)\n\nSee more details on the different settings here http://www.airwindows.com/busscolors3/\n",
+      "Dark - MCI (unusual midrange articulation, solid sound when pushed)\n\nRock - SSL (tightens bass; more character added using the input trim)\n\nLush - Neve (more bass; pillowy and fat, with airy highs and large in scale)\n\nVibe - funky old console (could bring an old dub platter sound to a track)\n\nHolo - Focusrite (3D space; locations of sound sources take on a special holographic quality)\n\nPunch - API (loaded with punch and impact)\n\nSteel - special effects console (lacks bass, old reggae consoles, it could accentuate the personality of some electronic music; cleans up low mid mud)\n\nTube - Manley (luminous, airy)\n\nSee more details on the different settings here http://www.airwindows.com/busscolors3/",
   },
   {
     Name: "ButterComp2",
@@ -185,7 +185,7 @@ export default [
   },
   {
     Name: "Capacitor",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Quirky filter",
     Comments:
@@ -264,7 +264,8 @@ export default [
     Type: "Saturation",
     Use: "Mixing",
     Description: "New kind of distorty",
-    Comments: " has some of the StudioTan and DitherMeTimbers colors.",
+	 Comments: "Has some of the StudioTan and DitherMeTimbers colors.",
+	 
   },
   {
     Name: "Compresaturator",
@@ -275,28 +276,27 @@ export default [
       " Dial in qualities unachievable with normal dynamics processors!",
   },
   {
-    Name: "Console5",
     Type: "Mix Buss Replacement",
     Use: "Mixing",
     Description:
-      "Digital Mix Buss\n1 Channel is the last plugin on tracks\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console5Channel or with a gain plugin before Console5.",
+      "Digital Mix Buss\n\n1 Channel is the last plugin on tracks\n\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console5Channel or with a gain/trim plugin before Console5.",
     Comments:
-      "It works through a channel plugin on every sound source, feeding at unity gain into the buss plugin which overrides the digital summing with Airwindows summing (more internal space, more depth, and with Console 4 it now has glue making the top-end more listenable)\n\nDO NOT hit it hard; tracks at -35lufs each are still too loud for it if it's a 50+ tracks session. Aim for -50lufs, then use a gain trim on the master buss to make-up the lost volume to help when mixing.\n\nDon't use any plugins after Console5Channel, nor before Console5Buss as this changes what they're doing and won't be able to work properly.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console4Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual.",
+      "Console5 works through a channel plugin on every sound source, feeding at unity gain into the buss plugin which overrides the digital summing with Airwindows summing. This gives you more internal space, more depth, and with Console 4 it now has glue making the top-end more listenable. \n\nDO NOT hit it hard; tracks at -35lufs each are still too loud for it if it's used in a 50+ tracks session. Aim for -50lufs, then use a gain trim on the master buss to make-up the lost volume to help when mixing.\n\nDon't use any plugins after Console5Channel, nor before Console5Buss as this changes what they're doing and won't be able to work properly.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console5Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual.",
   },
   {
     Name: "Console6",
     Type: "Mix Buss Replacement",
     Use: "Mixing",
     Description:
-      "New more intense Console, peaks at lower dB\n\nDigital Mix Buss\n1 Channel is the last plugin on tracks\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console6Channel or with a gain plugin before Console6.",
+      "New, more intense Console, peaks at lower dB\n\nDigital Mix Buss\n1 Channel is the last plugin on tracks\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console6Channel or with a gain/trim plugin before Console6.",
     Comments:
       "So the bottom line here is simply usability: mix into this like it’s an analog mixing console that can be overstressed. You can still put full scale single tracks through there, losslessly, because that’s what any Console does. You can mix into it provided you don’t stress the buss too hard (or don’t mind the distortion you get). Gain stage before hitting the Channel plugins, one Console6Channel plugin on each sound source with unity gain through the mix structure into the Console6Buss plugin. If you need to slam stuff louder afterward you must do it AFTER the Console6Buss plugin, in whatever way you like. Console is always a digital Mix Buss without an EQ-style sound of its own, so if you want further color you need to use other plugins outside Console. If you’re daring or just curious you can use things between the plugins (‘inside’ Console) such as a DAW EQ, echoes, subtle reverb etc. If you choose wrongly, it’ll distort or be weird, and things like EQs will be much more sensitive than usual to boosts and cuts.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console6Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual.\"",
   },
   {
     Name: "CrunchyGrooveWear",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
-    Description: "Bug-restored version of GrooveWear for more edge",
+    Description: "Bug-restored version of GrooveWear for more edge.",
     Comments: "",
   },
   {
@@ -511,9 +511,9 @@ export default [
   },
   {
     Name: "Energy",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
-    Description: "Electrifying fixed-frequency treble boosts",
+    Description: "Electrifying fixed-frEQuency treble boosts",
     Comments: "",
   },
   {
@@ -525,7 +525,7 @@ export default [
   },
   {
     Name: "EQ",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Just the EQ out of CStrip",
     Comments: "",
@@ -547,7 +547,7 @@ export default [
   },
   {
     Name: "FathomFive",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "Build this bass-enhancer into an aux on your mix to generate controllable tape-like fullness and bass depth",
@@ -555,7 +555,7 @@ export default [
   },
   {
     Name: "Floor",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Fake bottom octave for fun and profit!",
     Comments: "",
@@ -572,7 +572,7 @@ export default [
     Name: "Fracture",
     Type: "Utility",
     Use: "Mixing",
-    Description: "Soft frequency-doubling-and-tripling waveshaper",
+    Description: "Soft frEQuency-doubling-and-tripling waveshaper",
     Comments: "",
   },
   {
@@ -607,7 +607,7 @@ export default [
   },
   {
     Name: "GrooveWear",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Scrubbing highs off mechanically like a stylus would",
     Comments: "",
@@ -629,7 +629,7 @@ export default [
   },
   {
     Name: "HermePass",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mastering",
     Description: "Mastering highpass to set by ear only",
     Comments: "",
@@ -657,7 +657,7 @@ export default [
   },
   {
     Name: "HighPass2",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "Highpass2 is an unusual-sounding variable-slope highpass filter.",
@@ -665,9 +665,9 @@ export default [
   },
   {
     Name: "Holt",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
-    Description: "Synthy resonant lowpass filter focussed on low frequencies.",
+    Description: "Synthy resonant lowpass filter focussed on low frEQuencies.",
     Comments: "",
   },
   {
@@ -716,14 +716,14 @@ export default [
   },
   {
     Name: "Lowpass/Highpass",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Lowpass gives rich textures, Highpass timewarps your tone",
     Comments: "",
   },
   {
     Name: "Lowpass2",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
       "Lowpass2 is an unusual-sounding variable-slope lowpass filter.",
@@ -761,7 +761,7 @@ export default [
   },
   {
     Name: "Monitoring",
-    Type: "Utility",
+    Type: "Monitoring",
     Use: "Mixing",
     Description: "Monitoring is your one-stop shop for final 2-buss work!",
     Comments: "",
@@ -834,7 +834,7 @@ export default [
     Description:
       "NotJustAnotherDither is 24 bit and NotJustAnotherCD is 16 bit",
     Comments:
-      "So, if you’re sending an output to your DAC for monitoring, or to mix down a bunch of outputs using an external mixer, you’d use NotJustAnotherDither, for the 24 bit output.\n\nIf you’re making a CD or something else that requires 16 bit output, use NotJustAnotherCD. ",
+      "So, if you’re sending an output to your DAC for monitoring, or to mix down a bunch of outputs using an external mixer, you’d use NotJustAnotherDither, for the 24 bit output.\n\nIf you’re making a CD or something else that rEQuires 16 bit output, use NotJustAnotherCD. ",
   },
   {
     Name: "OneCornerClip",
@@ -845,7 +845,7 @@ export default [
   },
   {
     Name: "Pafnuty",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Chebyshev filter adds harmonics.",
     Comments: "",
@@ -875,7 +875,7 @@ export default [
   },
   {
     Name: "PhaseNudge",
-    Type: "Phase-eq",
+    Type: "Phase-EQ",
     Use: "Mixing",
     Description: "Phase rotator/allpass filter",
     Comments: "",
@@ -954,7 +954,7 @@ export default [
   },
   {
     Name: "PurestAir",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "PurestAir is a brightness experiment.",
     Comments: "",
@@ -1036,7 +1036,7 @@ export default [
   },
   {
     Name: "ResEQ",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "ResEQ is a bank of mostly midrange resonances",
     Comments: "",
@@ -1050,14 +1050,14 @@ export default [
   },
   {
     Name: "SideDull",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Lowpass on the side channel",
     Comments: "",
   },
   {
     Name: "SidePass",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Highpass on the side channel",
     Comments: "",
@@ -1071,7 +1071,7 @@ export default [
   },
   {
     Name: "Slew",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Slew clipping",
     Comments:
@@ -1079,10 +1079,10 @@ export default [
   },
   {
     Name: "Slew2",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description:
-      "Limit or wipe out the highest frequencies, near the Nyquist frequency",
+      "Limit or wipe out the highest frEQuencies, near the Nyquist frEQuency",
     Comments: "",
   },
   {
@@ -1209,19 +1209,19 @@ export default [
     Name: "TapeDither",
     Type: "Dither",
     Use: "Mastering",
-    Description: "TPDF variant with noise like reel-to-reel tape",
+    Description: "TPDF variant with noise like reel-to-reel tape.",
     Comments: "",
   },
   {
     Name: "TapeDust",
     Type: "Utility",
     Use: "Mixing",
-    Description: "High end tamer, sort of",
+    Description: "High end tamer, sort of.",
     Comments: "",
   },
   {
     Name: "TapeFat",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "TapeFat is the tone control from TapeDelay.",
     Comments: "",
@@ -1231,7 +1231,7 @@ export default [
     Type: "Compressor",
     Use: "Mixing",
     Description:
-      "With this buss compressor, sub-lows get bigger the harder you drive it",
+      "With this buss compressor, sub-lows get bigger the harder you drive it.",
     Comments: "",
   },
   {
@@ -1244,28 +1244,28 @@ export default [
   },
   {
     Name: "ToneSlant",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mastering",
-    Description: "Mastering grade very low Q tilt EQ",
+    Description: "Mastering grade very low Q tilt EQ.",
     Comments: "",
   },
   {
     Name: "ToTape5",
     Type: "Saturation",
     Use: "Mixing",
-    Description: "The highest quality Airwindows analog tape emulation",
+    Description: "The highest quality Airwindows analog tape emulation.",
     Comments: "see the product page",
   },
   {
     Name: "ToTape6",
     Type: "Saturation",
     Use: "Mixing",
-    Description: "ToTape6 is Airwindows tape emulation for 2020!",
+    Description: "ToTape6 is the Airwindows tape emulation for 2020!.",
     Comments: "",
   },
   {
     Name: "ToVinyl4",
-    Type: "Eq",
+    Type: "EQ",
     Use: "Mixing",
     Description: "Elliptical EQ, acceleration limiter, groove sim.",
     Comments:
@@ -1361,5 +1361,44 @@ export default [
     Use: "Mixing",
     Description: "Stereo width controller",
     Comments: "",
+  },
+  {
+    Name: "Dark",
+    Type: "Dither",
+    Use: "Mastering",
+    Description:
+      "Dark is a wordlength reducer that gives your music a blacker backdrop.",
+    Comments: "",
+  },
+  {
+    Name: "Chrome Oxide",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description: "Chrome Oxide is an alternate path to vibey old tape sonics.",
+    Comments: "",
+  },
+  {
+    Name: "Elation",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description:
+      "Elation is a re-release of another old Character plugin. This is the one that’s not really a compressor! :D",
+    Comments: "",
+  },
+  {
+    Name: "PurestFade",
+    Type: "Utility",
+    Use: "Mixing",
+    Description:
+      "PurestFade is just like PurestGain, but with a MUCH smoother fade control",
+    Comments: "",
+  },
+  {
+    Name: "Tape (Redux)",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description: "Tape needed to get improved. So now it is!",
+    Comments:
+      "This Redux is updating that plugin in place (the new version will outright replace the previous one, discard or overwrite the previous wherever you’ve got it) to add what people needed so badly, in spite of my need to keep it almost control-less: a head bump control.",
   },
 ];
