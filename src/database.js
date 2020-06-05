@@ -731,7 +731,7 @@ export default [
 	},
 	{
 		Name        : 'Monitoring',
-		Type        : 'Utility',
+		Type        : 'Monitoring',
 		Use         : 'Mixing',
 		Description : 'Monitoring is your one-stop shop for final 2-buss work!',
 		Comments    : ''
