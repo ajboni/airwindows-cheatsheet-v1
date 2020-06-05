@@ -24,7 +24,7 @@ export default [
 		Name        : 'Air',
 		Type        : 'EQ',
 		Use         : 'Mixing',
-		Description : 'A different bright EQ from any other.',
+		Description : "A bright EQ that's different from any other.",
 		Comments    : ''
 	},
 	{
@@ -151,7 +151,7 @@ export default [
 		Use         : 'Mixing',
 		Description : 'The Airwindows console emulations',
 		Comments    :
-			'Dark - MCI (unusual midrange articulation, solid sound when pushed)\nRock - SSL (tightens bass; more character added using the input trim)\nLush - Neve (more bass; pillowy and fat, with airy highs and large in scale)\nVibe - funky old console (could bring an old dub platter sound to a track)\nHolo - Focusrite (3D space; locations of sound sources take on a special holographic quality)\nPunch - API (loaded with punch and impact)\nSteel - special effects console (lacks bass, old reggae consoles, it could accentuate the personality of some electronic music; cleans up low mid mud)\nTube - Manley (luminous, airy)\n\nSee more details on the different settings here http://www.airwindows.com/busscolors3/\n'
+			'Dark - MCI (unusual midrange articulation, solid sound when pushed)\n\nRock - SSL (tightens bass; more character added using the input trim)\n\nLush - Neve (more bass; pillowy and fat, with airy highs and large in scale)\n\nVibe - funky old console (could bring an old dub platter sound to a track)\n\nHolo - Focusrite (3D space; locations of sound sources take on a special holographic quality)\n\nPunch - API (loaded with punch and impact)\n\nSteel - special effects console (lacks bass, old reggae consoles, it could accentuate the personality of some electronic music; cleans up low mid mud)\n\nTube - Manley (luminous, airy)\n\nSee more details on the different settings here http://www.airwindows.com/busscolors3/'
 	},
 	{
 		Name        : 'ButterComp2',
@@ -267,9 +267,9 @@ export default [
 		Type        : 'Mix Buss Replacement',
 		Use         : 'Mixing',
 		Description :
-			'Digital Mix Buss\n1 Channel is the last plugin on tracks\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console5Channel or with a gain/trim plugin before Console5.',
+			'Digital Mix Buss\n\n1 Channel is the last plugin on tracks\n\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console5Channel or with a gain/trim plugin before Console5.',
 		Comments    :
-			"It works through a channel plugin on every sound source, feeding at unity gain into the buss plugin which overrides the digital summing with Airwindows summing (more internal space, more depth, and with Console 4 it now has glue making the top-end more listenable)\n\nDO NOT hit it hard; tracks at -35lufs each are still too loud for it if it's a 50+ tracks session. Aim for -50lufs, then use a gain trim on the master buss to make-up the lost volume to help when mixing.\n\nDon't use any plugins after Console5Channel, nor before Console5Buss as this changes what they're doing and won't be able to work properly.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console4Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual."
+			' Console5 works through a channel plugin on every sound source, feeding at unity gain into the buss plugin which overrides the digital summing with Airwindows summing. This gives you more internal space, more depth, and with Console 4 it now has glue making the top-end more listenable. \n\nDO NOT hit it hard; tracks at -35lufs each are still too loud for it if it's used in a 50+ tracks session. Aim for -50lufs, then use a gain trim on the master buss to make-up the lost volume to help when mixing.\n\nDon't use any plugins after Console5Channel, nor before Console5Buss as this changes what they're doing and won't be able to work properly.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console5Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual.'
 	},
 	{
 		Name        : 'Console6',
