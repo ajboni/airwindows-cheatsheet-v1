@@ -264,8 +264,7 @@ export default [
     Type: "Saturation",
     Use: "Mixing",
     Description: "New kind of distorty",
-	 Comments: "Has some of the StudioTan and DitherMeTimbers colors.",
-	 
+    Comments: "Has some of the StudioTan and DitherMeTimbers colors.",
   },
   {
     Name: "Compresaturator",

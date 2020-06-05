@@ -1,8 +1,13 @@
 <script>
   import config from "./config";
   export let plugin;
-  let airwindowsSiteLink = config.AIRWINDOWS_SITE + plugin.Name.toLowerCase();
-  let youtubeLink = config.AIRWINDOWS_YOUTUBE_QUERY + plugin.Name.toLowerCase();
+  let airwindowsSiteLink = config.AIRWINDOWS_SITE;
+  let youtubeLink = config.AIRWINDOWS_YOUTUBE_QUERY;
+  if (plugin.Name) {
+    let airwindowsSiteLink = config.AIRWINDOWS_SITE + plugin.Name.toLowerCase();
+    let youtubeLink =
+      config.AIRWINDOWS_YOUTUBE_QUERY + plugin.Name.toLowerCase();
+  }
 </script>
 
 <style>
@@ -27,6 +32,8 @@
     margin-right: 0.25rem;
   }
 </style>
+
+<!-- content here -->
 
 <div class="card">
   <a href={airwindowsSiteLink} target="_blank">
