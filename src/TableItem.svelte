@@ -2,6 +2,7 @@
   import config from "./config";
   export let plugin;
 
+  // Provides override option if autogenereated url does not work.
   $: url = plugin.Url
     ? plugin.Url
     : config.AIRWINDOWS_SITE + plugin.Name.toLowerCase();
@@ -22,7 +23,6 @@
 </style>
 
 {#if plugin && plugin.Name}
-  <!-- content here -->
 
   <div class="card">
     <a href={url} target="_blank">
