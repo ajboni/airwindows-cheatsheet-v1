@@ -20,9 +20,9 @@
   let useFilter = "all";
   let typeFilter = "all";
 
+  // Sort on first load.
   onMount(() => {
     filterDatabase();
-    init = true;
   });
 
   function filterDatabase() {
