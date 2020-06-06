@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ajboni/airwindows-cheatsheet.svg?branch=master)](https://travis-ci.com/ajboni/airwindows-cheatsheet)
+
 # Airwindows Cheatsheet
 
 Cheatsheet for airwindows plugins.
