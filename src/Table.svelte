@@ -80,16 +80,16 @@
     switch (sortBy) {
       case "type":
         array = array.sort((x, y) => {
-          if (x.Type > y.Type) {
+          if (x.Type.toLowerCase() > y.Type.toLowerCase()) {
             return 1;
           }
-          if (x.Type < y.Type) {
+          if (x.Type.toLowerCase() < y.Type.toLowerCase()) {
             return -1;
           }
-          if (x.Name > y.Name) {
+          if (x.Name.toLowerCase() > y.Name.toLowerCase()) {
             return 1;
           }
-          if (x.Name < y.Name) {
+          if (x.Name.toLowerCase() < y.Name.toLowerCase()) {
             return -1;
           }
         });
@@ -97,22 +97,24 @@
         break;
       case "use":
         array = array.sort((x, y) => {
-          if (x.Use > y.Use) {
+          if (x.Use.toLowerCase() > y.Use.toLowerCase()) {
             return 1;
           }
-          if (x.Use < y.Use) {
+          if (x.Use.toLowerCase() < y.Use.toLowerCase()) {
             return -1;
           }
-          if (x.Name > y.Name) {
+          if (x.Name.toLowerCase() > y.Name.toLowerCase()) {
             return 1;
           }
-          if (x.Name < y.Name) {
+          if (x.Name.toLowerCase() < y.Name.toLowerCase()) {
             return -1;
           }
         });
         break;
       default:
-        array = array.sort((x, y) => x.Name > y.Name);
+        array = array.sort(
+          (x, y) => x.Name.toLowerCase() > y.Name.toLowerCase()
+        );
         break;
     }
     return array;
