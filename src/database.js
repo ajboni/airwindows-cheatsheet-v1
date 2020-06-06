@@ -275,6 +275,7 @@ export default [
       " Dial in qualities unachievable with normal dynamics processors!",
   },
   {
+    Name: "Console5",
     Type: "Mix Buss Replacement",
     Use: "Mixing",
     Description:

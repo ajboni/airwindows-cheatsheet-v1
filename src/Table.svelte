@@ -1,20 +1,29 @@
+<script context="module">
+  import db from "./database";
+</script>
+
 <script>
   import TableItem from "./TableItem.svelte";
-  import db from "./database";
   import { fade, fly } from "svelte/transition";
+  import { onMount } from "svelte";
 
   const uniqueUse = [...new Set(db.map(item => item.Use))].sort();
   let uniqueTypes = [...new Set(db.map(item => item.Type))].sort();
-
-  $: filteredDb = db;
+  let init = false;
+  let filteredDb = db;
   let searchString = "";
   let searchDelayTimer;
   let searchDelayTime = 350;
   let isLoadingSearchClass = "";
   let searchField;
-  let sortBy = "Name";
+  let sortBy = "name";
   let useFilter = "all";
   let typeFilter = "all";
+
+  onMount(() => {
+    filterDatabase();
+    init = true;
+  });
 
   function filterDatabase() {
     let tempDb = db;
@@ -65,7 +74,6 @@
     tempDb = deepSort(tempDb, sortBy);
 
     filteredDb = tempDb;
-    console.log(filteredDb);
   }
 
   function deepSort(array, sortBy) {
@@ -104,7 +112,6 @@
         });
         break;
       default:
-        console.log("local");
         array = array.sort((x, y) => x.Name > y.Name);
         break;
     }
@@ -229,9 +236,9 @@
         </div>
       </nav>
 
-      {#each filteredDb as plugin}
+      {#each filteredDb as filteredDbPlugin}
         <div class="table-item">
-          <TableItem {plugin} />
+          <TableItem plugin={filteredDbPlugin} />
         </div>
       {/each}
     </div>
