@@ -146,9 +146,19 @@
   .mb-075rem {
     margin-bottom: 0.75rem;
   }
+
+  .sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 2px 2px 5px #aaa;
+  }
 </style>
 
-<section class="section-small has-background-primary has-text-white">
+<section
+  class="section-small has-background-primary has-text-white search-section
+  sticky">
   <div class="field is-grouped is-grouped-multiline is-grouped-centered">
     <div class="field has-addons has-addons-centered">
       <p class="control">
@@ -220,24 +230,22 @@
   </div>
 </section>
 
-<section class="section-small">
+<section class="section-small ">
   {#if filteredDb.length > 0}
-    <div class="container" in:fade={{ delay: 100, duration: 500 }}>
-
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading">Plugins Found</p>
-            <p class="title">
-              <span class="icon is-size-4">
-                <i class="fas fa-headphones" aria-hidden="true" />
-              </span>
-              <span>{filteredDb.length}</span>
-            </p>
-          </div>
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Plugins Found</p>
+          <p class="title">
+            <span class="icon is-size-4">
+              <i class="fas fa-headphones" aria-hidden="true" />
+            </span>
+            <span>{filteredDb.length}</span>
+          </p>
         </div>
-      </nav>
-
+      </div>
+    </nav>
+    <div class="container " in:fade={{ delay: 100, duration: 500 }}>
       {#each filteredDb as filteredDbPlugin}
         <div class="table-item">
           <TableItem plugin={filteredDbPlugin} />
