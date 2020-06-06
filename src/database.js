@@ -12,6 +12,7 @@ export default [
     Use: "Mastering",
     Description: "The ultimate Airwindows loudness maximizer.",
     Comments: "",
+    Url: "https://www.airwindows.com/adclip-7/",
   },
   {
     Name: "ADT",
@@ -158,6 +159,7 @@ export default [
     Description: "The Airwindows console emulations",
     Comments:
       "Dark - MCI (unusual midrange articulation, solid sound when pushed)\n\nRock - SSL (tightens bass; more character added using the input trim)\n\nLush - Neve (more bass; pillowy and fat, with airy highs and large in scale)\n\nVibe - funky old console (could bring an old dub platter sound to a track)\n\nHolo - Focusrite (3D space; locations of sound sources take on a special holographic quality)\n\nPunch - API (loaded with punch and impact)\n\nSteel - special effects console (lacks bass, old reggae consoles, it could accentuate the personality of some electronic music; cleans up low mid mud)\n\nTube - Manley (luminous, airy)\n\nSee more details on the different settings here http://www.airwindows.com/busscolors3/",
+    Url: "http://www.airwindows.com/busscolors-4/",
   },
   {
     Name: "ButterComp2",
