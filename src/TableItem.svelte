@@ -15,6 +15,7 @@
 
   .comments {
     font-size: 0.85rem;
+    white-space: pre-wrap;
   }
 
   span.icon {
