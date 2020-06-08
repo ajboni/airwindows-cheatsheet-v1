@@ -112,9 +112,9 @@
         });
         break;
       default:
-        array = array.sort(
-          (x, y) => x.Name.toLowerCase() > y.Name.toLowerCase()
-        );
+        array = array.sort((x, y) => {
+          return x.Name.toLowerCase() > y.Name.toLowerCase() ? 1 : -1;
+        });
         break;
     }
     return array;
