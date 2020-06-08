@@ -1403,4 +1403,11 @@ export default [
     Comments:
       "This Redux is updating that plugin in place (the new version will outright replace the previous one, discard or overwrite the previous wherever you’ve got it) to add what people needed so badly, in spite of my need to keep it almost control-less: a head bump control.",
   },
+  {
+    Name: "AverMatrix",
+    Type: "Eq",
+    Use: "Mixing",
+    Description: "AverMatrix turns averaging into a full-featured EQ.",
+    Comments: "",
+  },
 ];
