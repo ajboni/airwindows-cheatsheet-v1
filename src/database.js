@@ -273,8 +273,7 @@ export default [
     Type: "Compressor",
     Use: "Mixing",
     Description: "Compresaturator fades between compressing and soft clipping",
-    Comments:
-      " Dial in qualities unachievable with normal dynamics processors!",
+    Comments: "Dial in qualities unachievable with normal dynamics processors!",
   },
   {
     Name: "Console5",
