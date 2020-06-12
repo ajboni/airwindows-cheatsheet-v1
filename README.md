@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/ajboni/airwindows-cheatsheet.svg?branch=master)](https://travis-ci.com/ajboni/airwindows-cheatsheet)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fairwindowscheatsheet.aboni.dev%2F)
 
 # Airwindows Cheatsheet
 
