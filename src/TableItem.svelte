@@ -13,8 +13,12 @@
     box-shadow: 0 0 0.25em rgba(10, 10, 10, 0.1);
   }
 
-  .comments {
+  .card-content > .comments {
     font-size: 0.85rem;
+    white-space: pre-wrap;
+  }
+
+  .card-content > .content {
     white-space: pre-wrap;
   }
 
