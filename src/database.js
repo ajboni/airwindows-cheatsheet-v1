@@ -1410,4 +1410,12 @@ export default [
     Comments:
       "It's really not a comb filter, it's what you get when you do an average. 'Taps' is the number of adjacent samples averaged together. 'Poles' is the number of times you do that (like stacking up instances of the first plugin)",
   },
+  {
+    Name: "Beam",
+    Type: "Dither",
+    Use: "Mastering",
+    Description:
+      "Beam is a wordlength reducer that tries to heighten sonority.",
+    Comments: "",
+  },
 ];
