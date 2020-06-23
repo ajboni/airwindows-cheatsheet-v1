@@ -113,7 +113,7 @@ export default [
     Use: "Mixing",
     Description: "An unusual edge-maker",
     Comments:
-      "Capacitor > Bite is a nice combo. The presence added by bite tickles near the quirk zone of capacitor.",
+      "Capacitor into Bite is a nice combo. The presence added by bite tickles near the quirk zone of capacitor.",
   },
   {
     Name: "BitGlitter",
