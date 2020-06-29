@@ -1418,4 +1418,12 @@ export default [
       "Beam is a wordlength reducer that tries to heighten sonority.",
     Comments: "",
   },
+  {
+    Name: "BrightAmbience",
+    Type: "FX",
+    Use: "Mixing",
+    Description: "BrightAmbience is a plugin for very bright gated reverbs.",
+    Comments:
+      "Back in the day, this was meant to be a great reverb, but it’s not. However, it IS a great ‘crazy bright ambience effect’, though it’s pretty CPU hungry. You can apply it to anything that you’d like a halo of shiny around, and its tone is nicer at 96K. (the sustain is tied to maximum sample delay, so higher sample rates will give you shorter sustains and denser shininess)",
+  },
 ];
