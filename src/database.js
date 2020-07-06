@@ -973,6 +973,7 @@ export default [
     Use: "Mixing",
     Description: "A virtually transparent clipper",
     Comments: "",
+    Url: "http://www.airwindows.com/purestdrive-vst/",
   },
   {
     Name: "PurestEcho",
