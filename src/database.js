@@ -1427,4 +1427,10 @@ export default [
     Comments:
       "Back in the day, this was meant to be a great reverb, but it’s not. However, it IS a great ‘crazy bright ambience effect’, though it’s pretty CPU hungry. You can apply it to anything that you’d like a halo of shiny around, and its tone is nicer at 96K. (the sustain is tied to maximum sample delay, so higher sample rates will give you shorter sustains and denser shininess)",
   },
+  {
+    Name: "Capacitor2",
+    Type: "Filter",
+    Use: "Mixing",
+    Description: "Capacitor2 is Capacitor with extra analog modeling and mojo.",
+  },
 ];
