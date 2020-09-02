@@ -852,11 +852,12 @@ export default [
     Comments: "",
   },
   {
-    Name: "PaulDither",
+    Name: "PaulDither Redux",
     Type: "Dither",
     Use: "Mastering",
     Description: "Single pole highpassed TPDF dither",
-    Comments: "It’s silky and sweet and a bit quieter than the usual kind.",
+    Comments:
+      "It’s silky and sweet and a bit quieter than the usual kind. \nIn a public Facebook discussion on dither, Paul Frindle (Sony Oxford, and the DSM 2 ‘prismatic compressor’) suggested his own preferred solution, in general terms: “The one we use most is triangular single pole high pass dither. It not freq bent enough sound odd, but is slightly less audible that flat dither. It can also be easily made by taking one sample of dither away from the previous one – this gives you the triangular PDF and the filtering in one go :-) “",
   },
   {
     Name: "PDConsole",
@@ -1118,7 +1119,7 @@ export default [
     Comments: "",
   },
   {
-    Name: "SpatializeDither",
+    Name: "SpatializeDither Redux",
     Type: "Dither",
     Use: "Mastering",
     Description: "Spatial positioning and clarity dither",
@@ -1208,11 +1209,12 @@ export default [
     Comments: "",
   },
   {
-    Name: "TapeDither",
+    Name: "TapeDither Redux",
     Type: "Dither",
     Use: "Mastering",
-    Description: "TPDF variant with noise like reel-to-reel tape.",
-    Comments: "",
+    Description: "TPDF Dither voiced for a tape-noise-like effect.",
+    Comments:
+      "TapeDither is every bit a TPDF dither, technically correct and flawless as far as dither goes. But it also is a highpassed dither with a softer tonal voicing that resembles good tape machines, and that doesn’t affect the dither performance at all. It doesn’t attenuate the audio content at all. Only the background dither noise is turned into what you’d get off a tape deck, all while the audio is protected from truncation and digital artifacts.",
   },
   {
     Name: "TapeDust",
@@ -1426,5 +1428,31 @@ export default [
     Description: "BrightAmbience is a plugin for very bright gated reverbs.",
     Comments:
       "Back in the day, this was meant to be a great reverb, but it’s not. However, it IS a great ‘crazy bright ambience effect’, though it’s pretty CPU hungry. You can apply it to anything that you’d like a halo of shiny around, and its tone is nicer at 96K. (the sustain is tied to maximum sample delay, so higher sample rates will give you shorter sustains and denser shininess)",
+  },
+  {
+    Name: "Capacitor 2",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description: "Capacitor2 is Capacitor with extra analog modeling and mojo.",
+    Comments:
+      "Capacitor2 is Capacitor, already a popular plugin, but with this analog modeling built in. There’s a ‘NonLin’ control that lets you crank up the distortedness from very minimal, to quite extreme. It’s sensitive to input level (naturally) so that’s another reason to have it on a control.",
+  },
+  {
+    Name: "BrightAmbience2",
+    Type: "FX",
+    Use: "Mixing",
+    Description:
+      "BrightAmbience2 is more BrightAmbience with better tone and more slapbacky effects.",
+    Comments:
+      "Super ultra bright ambience space that doesn’t get in the way. You can put it on things like drums for 80s gated verb, you can do dub-like things through using it to make a blurry slapback, but this thing is bonkers at putting Star Quality Vocal Glitter on voices. ",
+  },
+  {
+    Name: "Slew3",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "Slew3 is a new approach to slew clipping meant for a more analog-like darkening effect.",
+    Comments:
+      "Slew (original) darkens radically and makes a grungy, clipped tone (it’s in Channel, too, very subtly). Slew2, though there are some similarities in code, acts wildly different: it produces an intense rolloff that is only right up at the Nyquist frequency, and is an elegant anti-glare solution, but barely has a tone at all.",
   },
 ];
