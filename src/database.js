@@ -294,6 +294,26 @@ export default [
       "So the bottom line here is simply usability: mix into this like it’s an analog mixing console that can be overstressed. You can still put full scale single tracks through there, losslessly, because that’s what any Console does. You can mix into it provided you don’t stress the buss too hard (or don’t mind the distortion you get). Gain stage before hitting the Channel plugins, one Console6Channel plugin on each sound source with unity gain through the mix structure into the Console6Buss plugin. If you need to slam stuff louder afterward you must do it AFTER the Console6Buss plugin, in whatever way you like. Console is always a digital Mix Buss without an EQ-style sound of its own, so if you want further color you need to use other plugins outside Console. If you’re daring or just curious you can use things between the plugins (‘inside’ Console) such as a DAW EQ, echoes, subtle reverb etc. If you choose wrongly, it’ll distort or be weird, and things like EQs will be much more sensitive than usual to boosts and cuts.\n\nWARNING: it eats up low end, so maybe don't use on bass and kicks. If you do use it on low-end-rich tracks, also send them to an auxiliary track with FATHOM FIVE on it, to help recover the low end. \n\nIf the newly-added low end distorts,\n1. create a mix buss with Console6Buss for everything but the FATHOM FIVE track.\n2. Send both the mix buss and the FATHOM FIVE track to the 'master buss'\n3. Process your master buss as usual.\"",
   },
   {
+    Name: "Console7",
+    Type: "Mix Buss Replacement",
+    Use: "Mixing",
+    Description:
+      "Console7 is the best Console yet, with anti-alias filtering and special saturation curves!\n\nDigital Mix Buss\n\n1 Channel is the last plugin on tracks\n\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console7Channel or with a gain/trim plugin before Console7.",
+    Comments:
+      "All the channel plugins now default to 0.772 on the gain control. That, not 1.0, is ‘unity gain’.\n\nEvery channel and the buss now has a dedicated saturation/anti-saturation algorithm that ONLY exists in Console7. It’s based off of a blend of Spiral, and Density, with the first instance of Spiral run as a ConsoleBuss algorithm, ever. They go to the trouble of blending between this new Spiral/antiSpiral sort of Console, and the Density-based one as seen in Console5 and PurestConsole, because doing this allowed a tweak in the way channels hit saturation, where the harmonics are generated in a balanced way, a smoother onset of saturation than I’ve ever had before in a plugin. Console7 channels saturate in an incredibly sweet, non-edgy way, and that’s before the ultrasonic filtering.",
+    Url: "http://www.airwindows.com/console7/"
+  },
+  {
+    Name: "Console7Cascade",
+    Type: "Mix Buss Replacement",
+    Use: "Mixing",
+    Description:
+      "Console7Cascade is a drop-in replacement for Console7Channel that allows for MUCH higher gain.",
+    Comments:
+      "This is pretty straightforward. It’s a drop-in replacement for Console7Channel, right down to the gain staging that works with the trim control to fit the result into the mix.\n\nThe difference is, this uses FIVE gain stages of the same processing in Console7Channel. And of course it’s always better (I’m learning) to filter more gently between individual stages, rather than try to super-filter all at once and then do all the distorting. And so, Console7Cascade is born: turns out to be a very very ‘consoley’ type of crunch.",
+    Url: "http://www.airwindows.com/console7cascade/"
+  },
+  {
     Name: "CrunchyGrooveWear",
     Type: "EQ",
     Use: "Mixing",
