@@ -74,7 +74,7 @@
   </div>
 </nav>
 
-<nav>
+<style>
   .separator {
     margin-right: 1rem;
   }
@@ -82,4 +82,4 @@
   .separator-small {
     margin-right: 0.3rem;
   }
-</nav>
+</style>
