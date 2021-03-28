@@ -224,6 +224,14 @@ export default [
     Comments: "",
   },
   {
+    Name: "Channel9",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description:
+      "Channel9 is Channel8 with ultrasonic filtering, and new Teac and Mackie ‘low end’ settings.",
+    Comments: "",
+  },
+  {
     Name: "Chorus",
     Type: "Modulation",
     Use: "Mixing",
@@ -301,7 +309,7 @@ export default [
       "Console7 is the best Console yet, with anti-alias filtering and special saturation curves!\n\nDigital Mix Buss\n\n1 Channel is the last plugin on tracks\n\n2 Buss is the first plugin on the 2buss\n\nVERY IMPORTANT: Keep your track faders at unity level; change the track level using the trim in Console7Channel or with a gain/trim plugin before Console7.",
     Comments:
       "All the channel plugins now default to 0.772 on the gain control. That, not 1.0, is ‘unity gain’.\n\nEvery channel and the buss now has a dedicated saturation/anti-saturation algorithm that ONLY exists in Console7. It’s based off of a blend of Spiral, and Density, with the first instance of Spiral run as a ConsoleBuss algorithm, ever. They go to the trouble of blending between this new Spiral/antiSpiral sort of Console, and the Density-based one as seen in Console5 and PurestConsole, because doing this allowed a tweak in the way channels hit saturation, where the harmonics are generated in a balanced way, a smoother onset of saturation than I’ve ever had before in a plugin. Console7 channels saturate in an incredibly sweet, non-edgy way, and that’s before the ultrasonic filtering.",
-    Url: "http://www.airwindows.com/console7/"
+    Url: "http://www.airwindows.com/console7/",
   },
   {
     Name: "Console7Cascade",
@@ -311,7 +319,7 @@ export default [
       "Console7Cascade is a drop-in replacement for Console7Channel that allows for MUCH higher gain.",
     Comments:
       "This is pretty straightforward. It’s a drop-in replacement for Console7Channel, right down to the gain staging that works with the trim control to fit the result into the mix.\n\nThe difference is, this uses FIVE gain stages of the same processing in Console7Channel. And of course it’s always better (I’m learning) to filter more gently between individual stages, rather than try to super-filter all at once and then do all the distorting. And so, Console7Cascade is born: turns out to be a very very ‘consoley’ type of crunch.",
-    Url: "http://www.airwindows.com/console7cascade/"
+    Url: "http://www.airwindows.com/console7cascade/",
   },
   {
     Name: "CrunchyGrooveWear",
@@ -988,6 +996,15 @@ export default [
     Description: "Console 5 with the least coloration it can have",
     Comments: "",
   },
+
+  {
+    Name: "PurestConsole2",
+    Type: "Mix Buss Replacement",
+    Use: "Mixing",
+    Description:
+      "PurestConsole2 is the anti-aliasing version of PurestConsole, with special brightness and clarity!",
+    Comments: "",
+  },
   {
     Name: "PurestDrive",
     Type: "Clipper",
@@ -1474,5 +1491,182 @@ export default [
       "Slew3 is a new approach to slew clipping meant for a more analog-like darkening effect.",
     Comments:
       "Slew (original) darkens radically and makes a grungy, clipped tone (it’s in Channel, too, very subtly). Slew2, though there are some similarities in code, acts wildly different: it produces an intense rolloff that is only right up at the Nyquist frequency, and is an elegant anti-glare solution, but barely has a tone at all.",
+  },
+  {
+    Name: "Channel8",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description:
+      "Channel8 is subtle ‘analogifier’ that applies saturation boosts, subtle highpass filtering, and slew clipping. Channel8 is Channel7 with updates from Capacitor2 and Slew3.",
+    Comments: "",
+  },
+  {
+    Name: "GlitchShifter",
+    Type: "Pitch Shifter",
+    Use: "Mixing",
+    Description:
+      "GlitchShifter is a really gnarly, raw-sounding pitch shifter with a dose of insanity!",
+    Comments: "",
+  },
+  {
+    Name: "BiquadDouble",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "BiquadDouble is a handy Airwindows cascaded biquad filter: steeper roll-off before resonance.",
+    Comments: "",
+  },
+  {
+    Name: "TripleSpread",
+    Type: "Width",
+    Use: "Mixing",
+    Description:
+      "TripleSpread is a stereo tripler with extra wideness and GlitchShifter processing.",
+    Comments: "",
+  },
+  {
+    Name: "Nikola",
+    Type: "Distortion",
+    Use: "Mixing",
+    Description:
+      "Nikola is an Audio Tesla Coil plugin! Note: audio tesla coils don’t sound nice.",
+    Comments: "",
+  },
+  {
+    Name: "BiquadTriple",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "BiquadTriple is a handy Airwindows cascaded biquad filter: steeper roll-off before resonance.",
+    Comments: "",
+  },
+  {
+    Name: "TremoSquare",
+    Type: "Modulation",
+    Use: "Mixing",
+    Description:
+      "TremoSquare is a squarewave tremolo effect that only switches on zero crossings.",
+    Comments: "",
+  },
+  {
+    Name: "BassAmp",
+    Type: "Amp",
+    Use: "Mixing",
+    Description:
+      "BassAmp is an old plugin with new tweaks, that gives some bass guitar tones.",
+    Comments: "",
+  },
+  {
+    Name: "Isolator",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "Isolator is a steep highpass or lowpass filter, like you might find in a speaker crossover.",
+    Comments: "",
+  },
+  {
+    Name: "Ultrasonic",
+    Type: "Utility",
+    Use: "Mixing",
+    Description:
+      "Ultrasonic is a very clean, plain, high quality supersonic filter, for using inside digital mixes.",
+    Comments: "",
+  },
+  {
+    Name: "Infrasonic",
+    Type: "Utility",
+    Use: "Mixing",
+    Description:
+      "Infrasonic is a very clean, plain, high quality subsonic filter, for using inside digital mixes.",
+    Comments: "",
+  },
+  {
+    Name: "DarkNoise",
+    Type: "Sound Design",
+    Use: "Mixing",
+    Description:
+      "DarkNoise is an alternative method for producing bassier noise directly. Sound design stuff.",
+    Comments: "",
+  },
+  {
+    Name: "Acceleration2",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "Acceleration2 is Acceleration, better! Updated for high sample rate and more extreme effect. It is high-frequency limiter, Acceleration. It’s like a brightness control that doesn’t really take away apparent brightness, just glues it really hard. .",
+    Comments: "",
+  },
+  {
+    Name: "MatrixVerb",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "MatrixVerb is a wildly adjustable, strangely colorful reverb for deep and flexible spaces.",
+    Comments: "",
+  },
+  {
+    Name: "Reverb",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "Reverb is simplified and tuned MatrixVerb, adjusting everything for each optimum verb size.",
+    Comments: "",
+  },
+  {
+    Name: "Infinity",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "Infinity is a MatrixVerb specifically designed to sustain and layer sounds forever.",
+    Comments: "",
+  },
+  {
+    Name: "LRFlipTimer",
+    Type: "Utility",
+    Use: "Mixing",
+    Description:
+      "LRFlipTimer is a utility that swaps Left with Right every few (1-10) minutes.",
+    Comments: "",
+  },
+  {
+    Name: "Density2",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description:
+      "Density2 is a different color for Density. Smoothest saturation or antisaturation, plus highpass",
+    Comments: "",
+  },
+  {
+    Name: "Srsly2",
+    Type: "Width",
+    Use: "Mixing",
+    Description:
+      "Srsly is a psychoacoustic stereo processor. Srsly2 is a revisit of Srsly, to make the stereo widening more extreme.",
+    Comments: "",
+  },
+  {
+    Name: "Verbity",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "Verbity is my new best reverb, which uses feedforward reverb topology.",
+    Comments: "",
+  },
+  {
+    Name: "Galactic",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "Galactic is a super-reverb designed specially for pads and space ambient.",
+    Comments: "",
+  },
+  {
+    Name: "Iron Oxide Classic 2",
+    Type: "Saturation",
+    Use: "Mixing",
+    Description:
+      "IronOxideClassic2 is my bandpassy tape sim, updated for high sample rate and aliasing control.",
+    Comments: "",
+    Url: "http://www.airwindows.com/iron-oxide-classic-2/",
   },
 ];
