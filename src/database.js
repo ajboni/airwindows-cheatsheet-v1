@@ -1669,4 +1669,212 @@ export default [
     Comments: "",
     Url: "http://www.airwindows.com/iron-oxide-classic-2/",
   },
+  {
+    Name: "AutoPan",
+    Type: "Width",
+    Use: "Mixing",
+    Description:
+      "Organic stereo movement",
+    Comments: "Set up to get some nice organic movement into your mix in various ways",
+    Url: "http://www.airwindows.com/autopan/",
+  },
+  {
+    Name: "Mackity",
+    Type: "Overdrive",
+    Use: "Mixing",
+    Description:
+      "Mackie 1202 (pre-VLZ) input stage emulation",
+    Comments: "This is what you get when you run stuff into the inputs of the original Mackie 1202… and then, plug halfway into the insert points on the back of the unit. This time it’s not about modeling the two-band EQ, or any of that. This time it’s the refined essence of Mackie slam.",
+    Url: "http://www.airwindows.com/mackity",
+  },
+  {
+    Name: "Coils2",
+    Type: "Overdrive",
+    Use: "Mixing",
+    Description:
+      "Transformer overdrive emulator",
+    Comments: "Coils2! This is to Coils what Srsly2 was to Srsly. In other words, Coils was always ultra subtle. Coils2 lets you dial up the cheapness until the tone is wrecked (if you so choose).",
+    Url: "http://www.airwindows.com/coils2",
+  },
+  {
+    Name: "MackEQ",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "Mackity but with treble and bass EQ control too",
+    Comments: "Also emulates the garbage EQs in the 1202, the original two-band version, in which you can also overdrive the op-amps inside the EQs for good measure. Nothing about this sounds nice, but that's the point!",
+    Url: "http://www.airwindows.com/mackeq",
+  },
+  {
+    Name: "Infinity2",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "A shapeable MatrixVerb reverb type, specifically designed to sustain and layer sounds forever",
+    Comments: "Expands on Infinity with more tone shaping and a much-requested kill-switch!",
+    Url: "http://www.airwindows.com/infinity2",
+  },
+  {
+    Name: "XLowpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A distorted digital lowpass EQ inspired by the sound of retro sampler DSP",
+    Comments: "A lowpass take on the E-mu filters that distort when you abuse them.",
+    Url: "http://www.airwindows.com/xlowpass",
+  },
+  {
+    Name: "XLowpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A digital lowpass EQ inspired by the sound of retro sampler DSP",
+    Comments: "A lowpass take on the E-mu filters that distort when you abuse them.",
+    Url: "http://www.airwindows.com/xlowpass",
+  },
+  {
+    Name: "XHighpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A digital highpass EQ inspired by the sound of retro sampler DSP",
+    Comments: "A highpass take on the E-mu filters that distort when you abuse them.",
+    Url: "http://www.airwindows.com/xhighpass",
+  },
+  {
+    Name: "XBandpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A digital bandpass EQ inspired by the sound of retro sampler DSP",
+    Comments: "A bandpass take on the E-mu filters that distort when you abuse them.",
+    Url: "http://www.airwindows.com/xhighpass",
+  },
+  {
+    Name: "XNotch",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A digital notch EQ inspired by the sound of retro sampler DSP",
+    Comments: "A notch take on the E-mu filters that distort when you abuse them.",
+    Url: "http://www.airwindows.com/xnotch",
+  },
+  {
+    Name: "XRegion",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A digital region EQ inspired by the sound of retro sampler DSP",
+    Comments: "A region take on the E-mu filters that distort when you abuse them. This is like a far more extreme version of XBandpass",
+    Url: "http://www.airwindows.com/xregion",
+  },
+  {
+    Name: "Chamber",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "A self-adapting/calculating feedforward reverb based on the golden ratio",
+    Comments: "Three banks of four delays each in a Householder feedback matrix, except it’s feedforward. Dial in any degree of feedback or none, use any delay time (everything’s calculated out on the fly), do anything with it and it’ll adapt. It’ll always sound like a chamber, hence the name, but it’s maybe more malleable than any reverb I’ve ever made",
+    Url: "http://www.airwindows.com/chamber",
+  },
+  {
+    Name: "Energy2",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "Electrifying fixed-frequency treble boosts for high sample rate",
+    Comments: "More CPU-efficient than the original, but otherwise it’s the same focus on boosting the energy in treble and/or to bring out aggression in the high-mids and focus around attack transients.",
+    Url: "http://www.airwindows.com/energy2",
+  },
+  {
+    Name: "Air2",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A different bright EQ with silk tone and high sample rate support",
+    Comments: "Three treble-boost bands, Hiss, Glitter and Air. The first two are very like what’s in Energy2, but Air2 is NOT the same: it’s a different algorithm, not done the samw way Energy2’s ‘Rat’ band is done, and it has a broader, softer air band that’s less ‘raw harsh energy injection’ and more ‘bright and pretty’",
+    Url: "http://www.airwindows.com/air2",
+  },
+  {
+    Name: "BrightAmbience3",
+    Type: "Reverb",
+    Use: "Mixing",
+    Description:
+      "Updates on earlier versions adding undersampling for high sample rates, improved CPU efficiency, and better wider feedback/sustains",
+    Comments: "Takes sounds coming in, and transforming them into lengths of extruded and very bright reverb and includes inter-aural delays",
+    Url: "http://www.airwindows.com/brightambience3",
+  },
+  {
+    Name: "Hull",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "An alternate form of highpass/lowpass filter",
+    Comments: "Sounds like a grungy old school analog filter that’s maybe distorting and being overloaded by the power of the audio going through it. The lowpass and highpass forms have very distinct tones: lowpassing sounds resonant and sonorous, and reminds me of the oldest Emu samplers (I’m working on getting a Eurorack filter that uses the same chip, to further explore this since I don’t yet have an SP1200). Highpassing does the opposite: it sounds like high frequency boosts done using Hull have a particular airiness and lightness to them.",
+    Url: "http://www.airwindows.com/hull",
+  },
+  {
+    Name: "TapeDelay2",
+    Type: "Delay",
+    Use: "Mixing",
+    Description:
+      "A new implementation of a flexible tape echo",
+    Comments: "Substantial changes over yjr original TapeDelay. It’s no longer trying to do the ‘Iron Oxide’ style tone shaping. In fact, it’s not even a delay in the same sense as its predecessor. Instead, it’s a brand new, undersampled, Airwindows-bandpassed monster ready to make a whole pile of very convincing sounds. As plugin delays go, this covers a big range of purposes.",
+    Url: "http://www.airwindows.com/tapedelay2",
+  },
+  {
+    Name: "PitchDelay",
+    Type: "Delay",
+    Use: "Mixing",
+    Description:
+      "TapeDelay2 but with a fixed pitch shift instead of flutter",
+    Comments: "If you shift up, you can go towards very shrill crazy up-shifts that are right to the edge of blowing up the plugin. If you shift down, you can drop pitch down to literally nothing… and then keep going until you’re doing reverse buffer looping, which ends up (at a setting of 0) being the same pitch you started with, but backwards. Except it’s not playing the actual audio backwards, it’s cycling the algorithm backwards while the sound still plays ‘forwards’, so you get a ‘voice disguise’ effect",
+    Url: "http://www.airwindows.com/pitchdelay",
+  },
+  {
+    Name: "ZHighpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A highpass made to sound and act like the Emu e6400 Ultra highpass",
+    Comments: "Airwindows Z-series take on samples being overdriven in the E-mu you can hear as the machine flips out when you sweep the highpass up real high. Part of this is from the output stages of the device having characteristics not unlike Mackity: you get a strange overshoot, and that’s from the hardware",
+    Url: "http://www.airwindows.com/zhighpass",
+  },
+  {
+    Name: "ZBandpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A bandpass made to sound and act like the Emu e6400 Ultra bandpass",
+    Comments: "Airwindows Z-series take the E-mu bandpass",
+    Url: "http://www.airwindows.com/zbandpass",
+  },
+  {
+    Name: "ZLowpass",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A lowpass made to sound and act like the Emu e6400 Ultra Phaser filters.",
+    Comments: "Airwindows Z-series take the E-mu lowpass",
+    Url: "http://www.airwindows.com/zlowpass",
+  },
+  {
+    Name: "ZNotch",
+    Type: "EQ",
+    Use: "Mixing",
+    Description:
+      "A lowpass made to sound and act like the Emu e6400 Ultra lowpass",
+    Comments: "Airwindows Z-series take the E-mu phaser",
+    Url: "http://www.airwindows.com/znotch",
+  },
+    {
+    Name: "TUBE",
+    Type: "Saturation",
+    Use: "Mastering",
+    Description:
+      "Tube style SoundBetterizer using a new algorithm for analog modeling",
+    Comments: " It will make anything you put it on HUGE, and is a new algorithm that’s going to inform everything I do going forward, as well as building on everything I’ve learned to date!",
+    Url: "http://www.airwindows.com/tube",
+  },
+  
 ];
