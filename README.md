@@ -12,8 +12,14 @@ Otherwise please [fill out an issue](https://github.com/ajboni/airwindows-cheats
 
 # License
 
-Copyright © 2020 - [Alexis Boni](https://github.com/ajboni/), [Tiki Horea](https://github.com/tikihorea).  
+Copyright © 2020 - [Alexis Boni](https://github.com/ajboni/), [Tiki Horea](https://github.com/tikihorea) and [contributors](https://github.com/ajboni/airwindows-cheatsheet/graphs/contributors).  
 Released under the [GNU General Public License v3.0](LICENSE)
+
+# Contributors
+
+<a href="https://github.com/ajboni/airwindows-cheatsheet/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ajboni/airwindows-cheatsheet" />
+</a>
 
 # Development
 
