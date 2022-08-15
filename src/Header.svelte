@@ -8,7 +8,7 @@
   }
 </style>
 
-<section class="hero is-light">
+<section class="hero is-dark">
   <div class="hero-body has-text-centered">
     <div class="container">
       <h1 class="title">Airwindows Cheatsheet</h1>

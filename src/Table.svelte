@@ -152,12 +152,12 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 2px 2px 5px #aaa;
+    box-shadow: 2px 2px 5px #232020;
   }
 </style>
 
 <section
-  class="section-small has-background-primary has-text-white search-section
+  class="section-small has-background-primary has-text-light search-section
   sticky">
   <div class="field is-grouped is-grouped-multiline is-grouped-centered">
     <div class="field has-addons has-addons-centered">
@@ -230,13 +230,13 @@
   </div>
 </section>
 
-<section class="section-small ">
+<section class="section-small has-background-black">
   {#if filteredDb.length > 0}
     <nav class="level">
-      <div class="level-item has-text-centered">
+      <div class="level-item has-text-centered has-text-light">
         <div>
           <p class="heading">Plugins Found</p>
-          <p class="title">
+          <p class="title has-text-light">
             <span class="icon is-size-4">
               <i class="fas fa-headphones" aria-hidden="true" />
             </span>

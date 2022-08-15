@@ -13,6 +13,10 @@
     box-shadow: 0 0 0.25em rgba(10, 10, 10, 0.1);
   }
 
+.card-content { 
+    background-color: #22262E !important;
+  }
+    
   .card-content > .comments {
     font-size: 0.85rem;
     white-space: pre-wrap;
@@ -29,21 +33,21 @@
 
 {#if plugin && plugin.Name}
 
-  <div class="card">
+  <div class="card has-background-dark">
     <a href={url} target="_blank">
-      <header class="card-header has-background-white-bis">
-        <p class="card-header-title">{plugin.Name}</p>
+      <header class="card-header has-background-info">
+        <p class="card-header-title is-dark has-text-light">{plugin.Name}</p>
 
         <div class="card-header-icon">
           <div class="tags has-addons">
-            <span class="tag ">{plugin.Use}</span>
+            <span class="tag is-dark">{plugin.Use}</span>
             <span class="tag is-primary">{plugin.Type}</span>
 
           </div>
         </div>
       </header>
     </a>
-    <div class="card-content">
+    <div class="card-content has-text-light">
       <div class="content">{plugin.Description}</div>
       {#if plugin.Comments}
         <div class="comments">
