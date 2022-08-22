@@ -7,6 +7,13 @@ export default [
     Comments: "",
   },
   {
+    Name: "Acceleration2",
+    Type: "EQ",
+    Use: "Mixing",
+    Description: "Acceleration2 is Acceleration, better! Updated for high sample rate and more extreme effect.",
+    Comments: "",
+  },
+  {
     Name: "ADClip7",
     Type: "Limiter",
     Use: "Mastering",
