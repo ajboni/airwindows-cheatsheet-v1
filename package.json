@@ -10,6 +10,7 @@
   "license": "GPL-3.0-or-later",
   "author": "ajboni <mail@aboni.dev>",
   "scripts": {
+    "test": "jest",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "jest": "^28.1.3",
     "node-sass": "^7.0.1",
     "prettier": "2.7.1",
     "rollup": "^2.78.0",
@@ -31,6 +33,8 @@
     "bulma": "^0.9.4",
     "rollup-plugin-css-only": "^3.1.0",
     "sirv-cli": "^2.0.2",
-    "smelte": "^1.1.8"
+    "smelte": "^1.1.8",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.32"
   }
 }
