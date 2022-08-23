@@ -19,3 +19,17 @@ test('loads wordpress index', async () => {
 });
 
 
+
+test('handle wah page', async () => {
+
+  const input_data_path = path.resolve(__dirname, './Wah_Airwindows.html');
+  var xml_data = await fs.readFile(input_data_path, "UTF-8");
+  
+  const result = handle_wp.extractPageFeatures(xml_data);
+  expect(result.Name).toBe('Wah');
+  expect(result.Type).toBe('EQ');
+  expect(result.Date).toBe(1207008000000);
+  expect(result.Description).toMatch(/is the definitive.*/);
+});
+
+
