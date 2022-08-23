@@ -1,4 +1,4 @@
-const handle_wp = require('../src/handle_wp');
+const handle_wp = require('../src/scraping/handle_wp');
 const fs = require('fs').promises;
 const path = require('path');
 
