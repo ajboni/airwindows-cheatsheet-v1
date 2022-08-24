@@ -1,6 +1,6 @@
 
 // This could change, we might need a better approach.
-const introTextSeparator = /(\r\n){3,}[^\r]/;
+const introTextSeparator = /(\r\n){3,}/;
 const entriesSeparator = /#{3,}/;
 
 
@@ -9,7 +9,7 @@ function extractDatabase(content) {
   const entries = content.split(entriesSeparator);
   const intro = entries.shift();
 
-  const categoriesText = intro.split(introTextSeparator)[1];
+  const categoriesText = intro.split(introTextSeparator)[2];
   const categoriesRegex = /^([\w]{1}[\w\s\-]+):(.+)$/gm;
   const categoriesMatches = categoriesText.matchAll(categoriesRegex);
 
@@ -19,19 +19,25 @@ function extractDatabase(content) {
     const category = match[1].trim();
     const matchEntries = match[2].split(",").map((e) => e.trim());
     // categoriesDB[category] = matchEntries;
-    matchEntries.array.forEach(element => {
+    matchEntries.forEach(element => {
       entryDatabase[element] = {"Category": category};
     });
   }
 
+  const entryRegex = /^([\w-]+)[^\w-]+(.*)$/s;
   for (const entryItem of entries) {
 
     const entryText = entryItem.trim();
 
-    const entrySplit = entryText.split(/\s+(.*)/s);
+    const entrySplit = entryText.match(entryRegex, 2);
 
-    const entry = entrySplit[0];
-    const description = entrySplit[1];
+    if (!entrySplit || entrySplit.length < 3) {
+      console.log("Failed to parse entry", entryText);
+      continue;
+    }
+
+    const entry = entrySplit[1].trim();
+    const description = entrySplit[2].trim();
 
     const existingEntry = entryDatabase[entry] ?? {};
 
