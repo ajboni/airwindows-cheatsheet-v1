@@ -27,3 +27,12 @@ Released under the [GNU General Public License v3.0](LICENSE)
 2. `npm install`
 3. `npm run dev`
 4. Web server should be reachable at http://localhost:5000
+
+## Scraping data
+
+1. `node run src/scraping/run_scraper.js`
+2. inspect output in `database.generated.js`
+
+## Running tests
+
+`npm test`

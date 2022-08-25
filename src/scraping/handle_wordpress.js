@@ -24,23 +24,26 @@ function extractPageFeatures(plugin_page) {
   const header = headerElement[0].firstChild.nodeValue;
 
   const descriptionElement = xpath.select('./p/span', postContentElement[0]);
-  const description = descriptionElement[0].firstChild.nodeValue;
+  const description = descriptionElement && descriptionElement.length > 0
+    ? descriptionElement[0].firstChild.nodeValue
+    : "";
 
   const meta = xpath.select('//ul[@class="meta"]', doc);
 
   const date = xpath.select('./li/a', meta[0])[0].firstChild.data;
 
   const tags = xpath.select('./li/a[@rel="tag"]', meta[0]);
+  const type = tags && tags.length > 0
+    ? tags[0].firstChild.data
+    : "";
 
   const categories = xpath.select('./li/a[@rel="catgeory tag"]', meta[0]);
 
   return {
     Name: header,
-    Type: tags[0].firstChild.data,
-    Use: "Mixing",
+    Type: type,
     Description: description,
-    Date: Date.parse(date),
-    Comments: "",
+    Date: Date.parse(date)
   }
 }
 

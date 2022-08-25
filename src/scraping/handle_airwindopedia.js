@@ -20,7 +20,7 @@ function extractDatabase(content) {
     const matchEntries = match[2].split(",").map((e) => e.trim());
     // categoriesDB[category] = matchEntries;
     matchEntries.forEach(element => {
-      entryDatabase[element] = {"Category": category};
+      entryDatabase[element] = {"Category": category, "Name": element};
     });
   }
 
@@ -39,7 +39,7 @@ function extractDatabase(content) {
     const entry = entrySplit[1].trim();
     const description = entrySplit[2].trim();
 
-    const existingEntry = entryDatabase[entry] ?? {};
+    const existingEntry = entryDatabase[entry] ?? {"Name": entry};
 
     existingEntry["Description"] = description;
     entryDatabase[entry] = existingEntry;
