@@ -6,9 +6,12 @@
   import TableItem from "./TableItem.svelte";
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
-  let db = DB.map((x) => (x.Type ? x : { ...x, Type: "Unknown" })).map((x) =>
-    x.Type != "" ? x : { ...x, Type: "Unknown" }
-  );
+  let db = DB.map((x) => {
+    const result = x;
+    if (x.Type || x.Type === "") result.Type = "Unknown";
+    if (!x.Description) result.Description = "No description.";
+    return result;
+  });
 
   const uniqueUse = [...new Set(db.map((item) => item.Use))].sort();
   let uniqueTypes = [...new Set(db.map((item) => item.Type))].sort();
