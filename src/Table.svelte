@@ -1,14 +1,17 @@
 <script context="module">
-  import db from "./database";
+  import DB from "./database.generated.js";
 </script>
 
 <script>
   import TableItem from "./TableItem.svelte";
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
+  let db = DB.map((x) => (x.Type ? x : { ...x, Type: "Unknown" })).map((x) =>
+    x.Type != "" ? x : { ...x, Type: "Unknown" }
+  );
 
-  const uniqueUse = [...new Set(db.map(item => item.Use))].sort();
-  let uniqueTypes = [...new Set(db.map(item => item.Type))].sort();
+  const uniqueUse = [...new Set(db.map((item) => item.Use))].sort();
+  let uniqueTypes = [...new Set(db.map((item) => item.Type))].sort();
   let init = false;
   let filteredDb = db;
   let searchString = "";
@@ -30,15 +33,15 @@
 
     // Filter by use
     if (useFilter !== "all") {
-      tempDb = tempDb.filter(plugin => plugin.Use === useFilter);
-      uniqueTypes = [...new Set(tempDb.map(item => item.Type))].sort();
+      tempDb = tempDb.filter((plugin) => plugin.Use === useFilter);
+      uniqueTypes = [...new Set(tempDb.map((item) => item.Type))].sort();
     } else {
-      uniqueTypes = [...new Set(db.map(item => item.Type))].sort();
+      uniqueTypes = [...new Set(db.map((item) => item.Type))].sort();
     }
 
     // Filter by Type
     if (typeFilter !== "all") {
-      tempDb = tempDb.filter(plugin => plugin.Type === typeFilter);
+      tempDb = tempDb.filter((plugin) => plugin.Type === typeFilter);
     }
 
     // Search query
@@ -47,12 +50,12 @@
     } else {
       switch (searchField) {
         case "name":
-          tempDb = tempDb.filter(plugin =>
+          tempDb = tempDb.filter((plugin) =>
             plugin.Name.toLowerCase().includes(searchString.toLowerCase())
           );
           break;
         case "desc":
-          tempDb = tempDb.filter(plugin =>
+          tempDb = tempDb.filter((plugin) =>
             plugin.Description.toLowerCase().includes(
               searchString.toLowerCase()
             )
@@ -60,7 +63,7 @@
           break;
         default:
           tempDb = tempDb.filter(
-            plugin =>
+            (plugin) =>
               plugin.Name.toLowerCase().includes(searchString.toLowerCase()) ||
               plugin.Description.toLowerCase().includes(
                 searchString.toLowerCase()
@@ -124,41 +127,17 @@
   function handleSearch() {
     isLoadingSearchClass = "is-loading";
     clearTimeout(searchDelayTimer);
-    searchDelayTimer = setTimeout(function() {
+    searchDelayTimer = setTimeout(function () {
       filterDatabase();
       isLoadingSearchClass = "";
     }, searchDelayTime);
   }
 </script>
 
-<style>
-  .table-item {
-    margin-bottom: 1rem;
-  }
-  .section-small {
-    padding: 1rem;
-  }
-
-  .field.is-grouped.is-grouped-multiline.is-grouped-centered {
-    column-gap: 1rem;
-  }
-
-  .mb-075rem {
-    margin-bottom: 0.75rem;
-  }
-
-  .sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 2px 2px 5px #232020;
-  }
-</style>
-
 <section
   class="section-small has-background-primary has-text-light search-section
-  sticky">
+  sticky"
+>
   <div class="field is-grouped is-grouped-multiline is-grouped-centered">
     <div class="field has-addons has-addons-centered">
       <p class="control">
@@ -172,22 +151,23 @@
       </p>
 
       <p
-        class={'control filter  has-icons-left has-icons-right ' + isLoadingSearchClass}>
+        class={"control filter  has-icons-left has-icons-right " +
+          isLoadingSearchClass}
+      >
         <input
           bind:value={searchString}
           on:input={() => handleSearch()}
           class="input is-small is-expanded"
           type="search"
-          placeholder="Search" />
+          placeholder="Search"
+        />
         <span class="icon is-small is-left">
           <i class="fas fa-search" />
         </span>
       </p>
-
     </div>
 
     <div class="field has-addons has-addons-centered mb-075rem">
-
       <p class="control">
         <span class="select is-small">
           <select bind:value={sortBy} on:change={() => filterDatabase()}>
@@ -195,7 +175,6 @@
             <option value="type">Sort by Type</option>
             <option value="use">Sort by Use</option>
           </select>
-
         </span>
       </p>
 
@@ -204,9 +183,10 @@
           <select
             bind:value={useFilter}
             on:change={() => {
-              typeFilter = 'all';
+              typeFilter = "all";
               filterDatabase();
-            }}>
+            }}
+          >
             <option value="all">All Uses</option>
             {#each uniqueUse as item}
               <option value={item}>{item}</option>
@@ -218,10 +198,9 @@
       <p class="control">
         <span class="select is-small">
           <select bind:value={typeFilter} on:change={() => filterDatabase()}>
-
             <option value="all">All Types</option>
             {#each uniqueTypes as item}
-              <option value={item}>{item.substring(0, 16)}</option>
+              <option value={item}>{item}</option>
             {/each}
           </select>
         </span>
@@ -256,12 +235,36 @@
     <div
       class="container is-widescreen "
       in:fade={{ duration: 200 }}
-      out:fade={{ duration: 200 }}>
+      out:fade={{ duration: 200 }}
+    >
       <div class="notification has-text-centered">
         <h1>No results for the given search. 😞</h1>
-
       </div>
     </div>
   {/if}
-
 </section>
+
+<style>
+  .table-item {
+    margin-bottom: 1rem;
+  }
+  .section-small {
+    padding: 1rem;
+  }
+
+  .field.is-grouped.is-grouped-multiline.is-grouped-centered {
+    column-gap: 1rem;
+  }
+
+  .mb-075rem {
+    margin-bottom: 0.75rem;
+  }
+
+  .sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 2px 2px 5px #232020;
+  }
+</style>
