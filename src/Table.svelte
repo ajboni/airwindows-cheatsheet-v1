@@ -8,7 +8,7 @@
   import { onMount } from "svelte";
   let db = DB.map((x) => {
     const result = x;
-    if (x.Type || x.Type === "") result.Type = "Unknown";
+    if (!x.Type || x.Type === "") result.Type = "Unknown";
     if (!x.Description) result.Description = "No description.";
     return result;
   });
