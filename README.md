@@ -2,6 +2,7 @@
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fairwindowscheatsheet.aboni.dev%2F)
 
 # Airwindows Cheatsheet
+This project is now in manteinance in favor of the newer airwindowpedia based repo: https://github.com/ajboni/airwindows-cheatsheet/
 
 Cheatsheet for airwindows plugins.
 
